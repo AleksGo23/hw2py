@@ -1,6 +1,6 @@
 # Aleks Gondek alg6177@psu.edu
 
-grade1 = input("Enter your course 1 letter grade: ")
+
  
 def getGradePoint(grade):
   gpa = 0.0
@@ -24,23 +24,28 @@ def getGradePoint(grade):
     gpa = 0.0
   return gpa
 
-credit1 = input("Enter your course 1 credit: ")
-credit1 = float(credit1)
-gpa1 = getGradePoint(grade1)
-print("Grade point for course 1 is:",gpa1)
+def run():
+  grade1 = input("Enter your course 1 letter grade: ")
+  credit1 = input("Enter your course 1 credit: ")
+  credit1 = float(credit1)
+  gpa1 = getGradePoint(grade1)
+  print("Grade point for course 1 is:",gpa1)
 
-grade2 = input("Enter your course 2 letter grade: ")
-credit2 = input("Enter your course 2 credit: ")
-credit2 = float(credit2)
-gpa2 = getGradePoint(grade2)
-print("Grade point for course 2 is:",gpa2)
+  grade2 = input("Enter your course 2 letter grade: ")
+  credit2 = input("Enter your course 2 credit: ")
+  credit2 = float(credit2)
+  gpa2 = getGradePoint(grade2)
+  print("Grade point for course 2 is:",gpa2)
 
-grade3 = input("Enter your course 3 letter grade: ")
-credit3 = input("Enter your course 3 credit: ")
-credit3 = float(credit3)
-gpa3 = getGradePoint(grade3)
-print("Grade point for course 3 is:",gpa3)
+  grade3 = input("Enter your course 3 letter grade: ")
+  credit3 = input("Enter your course 3 credit: ")
+  credit3 = float(credit3)
+  gpa3 = getGradePoint(grade3)
+  print("Grade point for course 3 is:",gpa3)
 
-GPA = (gpa1*credit1 + gpa2*credit2 + gpa3*credit3)/(credit1+credit2+credit3)
+  GPA = (gpa1*credit1 + gpa2*credit2 + gpa3*credit3)/(credit1+credit2+credit3)
 
-print("Your GPA is:", GPA)
+  print("Your GPA is:", GPA)
+
+if __name__ == "__main__":
+  run()
